@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        body {
+            background: #ACBDE6;
+            color: #0b0c0c;
+            padding-top: 50px;
+        }
+
+        .main_container{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container {
+            width: 400px;
+            margin: 50px auto;
+            border: 1px solid #0B1419;
+            border-radius: 5px;
+            text-align: center;
+            padding: 50px 0;
+            height: 350px;
+        }
+
+        .main-heading{
+            margin-top: 50px;
+        }
+
+        .button{
+            margin: 150px 0px;
+            padding: 10px 50px;
+            font-size: 18px;
+            border: 1px solid #0B1419;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .focus-in-expand {
+            -webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+        }
+
+        @-webkit-keyframes focus-in-expand {
+            0% {
+                letter-spacing: -0.5em;
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-filter: blur(0px);
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes focus-in-expand {
+            0% {
+                letter-spacing: -0.5em;
+                -webkit-filter: blur(12px);
+                filter: blur(12px);
+                opacity: 0;
+            }
+
+            100% {
+                -webkit-filter: blur(0px);
+                filter: blur(0px);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="container box1">
+            <h1 id="main-heading" class="focus-in-expand">Click the button</h1>
+            <button type="button" class="button" onclick="alert('Testing button 1')">Enter</button>
+        </div>
+        
+        <div class="container box2">
+            <h1 id="main-heading" class="focus-in-expand">Click the button</h1>
+            <button type="button" class="button btn-2">Enter</button>
+        </div>
+        <div class="container box3">
+            <h1 id="main-heading" class="focus-in-expand">Click the button</h1>
+            <button type="button" class="button btn-3">Enter</button>
+        </div>
+    </div>
+
+    <script src="event listeners.js"></script>
+</body>
+
+</html>

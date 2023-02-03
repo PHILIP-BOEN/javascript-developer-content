@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Segoe UI;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background: url(img.jpg) no-repeat center center/ cover;
+    
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.384);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-task-container{
+    background-color: white;
+    width: 500px;
+    padding: 20px;
+    border-radius: 20px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#input-task{
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 350px;
+}
+
+#add-task{
+    height: 50px;
+    width: 50px;
+    font-size: 22px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+    background-color: rgba(109, 109, 109, 0);
+}
+
+#add-task:hover{
+    transition: .5s;
+    background-color: rgb(0, 255, 85);
+}
+
+.task{
+    width: 100%;
+    background-color: bisque;
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+
+    padding: 5px;
+    margin: 15px 0px 0 0px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task li{
+    list-style: none;
+    flex: 4;
+    padding: 5px;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.task button {
+    height: 50px;
+    width: 50px;
+    
+    background-color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.task .checkTask{
+    color: rgb(16, 122, 148);
+    margin-right: 10px;
+    border: 1px solid rgb(16, 122, 148);
+    border-radius: 10px;
+}
+
+.task .checkTask:hover{
+    background-color: rgb(16, 122, 148);
+    color: #fff;
+}
+
+.task .deleteTask{
+    color: rgba(209, 13, 46, 0.842);
+    border: 1px solid rgba(209, 13, 46, 0.842);
+    border-radius: 10px;
+}
+
+.task .deleteTask:hover {
+    background-color: rgba(209, 13, 46, 0.842);
+    color: #fff;
+}
+
+

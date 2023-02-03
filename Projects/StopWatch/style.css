@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI;
+}
+
+.container{
+    height: 100vh;
+    background: url(img.jpg) no-repeat center center/ cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inner-container{
+    width: 60%;
+    background-color: rgba(182, 166, 139, 0.966);
+    border-radius: 25px;
+    padding: 10px;
+    box-shadow: 0 0 5px rgb(36, 36, 36);
+}
+
+#counter{
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    letter-spacing: 1.5px;
+    padding: 5px;
+    color: rgb(39, 38, 38);
+}
+
+.media-controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 5px;
+}
+
+.play, .reset{
+    cursor: pointer;
+}

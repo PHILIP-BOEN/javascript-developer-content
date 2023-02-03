@@ -1,0 +1,44 @@
+<html>
+<body>
+    <script>
+        let cars = [{
+                brand: "Audi",
+                type: "sport",
+                year: 2022
+            },
+            {
+                brand: "Tesla",
+                type: "suv",
+                year: 2019
+            },
+            {
+                brand: "BMW",
+                type: "hatchback",
+                year: 2014
+            },
+        ]
+
+        let carJson = JSON.stringify(cars);
+        console.log(carJson);
+
+
+        //use of fetch
+
+        fetch("./companies.json")
+        .then(res=> res.json())
+        .then(json=> console.log(json.companies[0].name))
+
+        //use of parse
+
+        let person = `{
+            "name": "John Doe",
+            "age": 23,
+            "occupation" : "student"
+        }`
+
+        let personJson = JSON.parse(person);
+        console.log(personJson);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+
+        body {
+            background: #ACBDE6;
+            color: #0b0c0c;
+            padding-top: 50px;
+        }
+
+        h1 {
+            width: 250px;
+            margin: auto;
+        }
+
+        .reveal, .less{
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: bolder;
+            letter-spacing: 0.5px;  
+        }
+
+        .hidden{
+            display: none;
+        }
+
+        .hidden.reveal2{
+            display: inline;
+        }
+
+        .main-container{
+            width: 400px;
+            border: 1px solid #0B1419;
+            border-radius: 5px;
+            margin: 50px auto;
+            padding: 20px 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event Listeners</h1>
+    <div class="main-container">
+        <p class="reveal2">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium. <span class="reveal">Show more</span></p>
+        <p class="hidden">totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui
+        ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+        adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+        Ut enim ad minima. <span class = "less">Show less</span></p>
+    </div>
+
+    <!-- Another Example -->
+    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. <span class="hidden3" style="display: none;">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</span></p>
+    <button class="reveal3">Show More</button>
+
+    <script src="event listeners example.js"></script>
+</body>
+</html>

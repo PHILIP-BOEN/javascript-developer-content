@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            
+        }
+
+        body{
+            background: #ACBDE6;
+            color: #0b0c0c;
+            padding-top: 50px;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        .container{
+            width: 700px;
+            margin: 50px auto;
+            border: 1px solid #0B1419;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .list-items{
+            padding: 5px 0px;
+            border-top: 0.5px solid #0B1419;
+        }
+
+        .focus-in-expand {
+	-webkit-animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in-expand 0.8s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+        @-webkit-keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes focus-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    -webkit-filter: blur(12px);
+            filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+            filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="main-heading" class="focus-in-expand">My Favourite Movies</h1>
+        <ul>
+            <li class="list-items">Better Call Saul</li>
+            <li class="list-items">StartUp</li>
+            <li class="list-items">Power</li>
+            <li class="list-items">Peacemaker</li>
+        </ul>
+    </div>
+
+        First name: <input type="text" id="fname"><br>
+        Last name:  <input type="text" id="lname"><br>
+
+        <button type="button" onclick="submit()">Submit</button>
+    
+    <p>These are the values of each element in the form:</p>
+    
+    <div id="demo"></div>
+    
+    <script>
+        
+    </script>
+
+
+    <script src="selecting and styling elements in the DOM.js"></script>
+</body>
+</html>

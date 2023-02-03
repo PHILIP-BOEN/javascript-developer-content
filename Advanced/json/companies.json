@@ -1,0 +1,23 @@
+{
+    "companies": [{
+        "name": "Google",
+        "numberofEmployees": 200000,
+        "founder": "Sergey Brin and Larry Page"
+    },
+    {
+        "name": "BitCoin",
+        "numberofEmployees": 50000,
+        "founder": null
+    },
+    {
+        "name": "Meta",
+        "numberofEmployees": 150000,
+        "founder": "Mark Zuckerberg"
+    },
+    {
+        "name": "Amazon",
+        "numberofEmployees": 300000,
+        "founder": "Jeff Bezos"
+    }
+]
+}
